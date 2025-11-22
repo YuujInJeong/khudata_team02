@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# 데이터 파일 (용량이 크므로 제외)
+*.csv
+*.xlsx
+*.xls
+*.parquet
+
+# 이미지/시각화 파일 (용량이 클 수 있음)
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.html
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 로그 파일
+*.log
+
+# 임시 파일
+*.tmp
+*.temp
+*_temp*
+*_tmp*
+
+# 결과 파일 (선택적으로 제외)
+# real_estate/preprogressed/*.csv
+# real_estate/preprogressed/*.png
+# real_estate/preprogressed/*.html
+
