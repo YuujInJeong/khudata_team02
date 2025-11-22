@@ -9,18 +9,20 @@ venv/
 ENV/
 .venv
 
-# 데이터 파일 (용량이 크므로 제외)
-*.csv
-*.xlsx
-*.xls
-*.parquet
+# 데이터 파일 (일부만 포함)
+# 원본 raw 데이터는 제외 (용량이 큼)
+real_estate/raw/*.csv
+# 최종 처리된 데이터와 템플릿은 포함
+!real_estate/preprogressed/*.csv
 
-# 이미지/시각화 파일 (용량이 클 수 있음)
+# 이미지/시각화 파일 (일부만 포함)
+# 큰 이미지는 제외
 *.png
 *.jpg
 *.jpeg
 *.gif
-*.html
+# HTML 시각화는 포함
+!real_estate/preprogressed/*.html
 
 # Jupyter Notebook
 .ipynb_checkpoints
